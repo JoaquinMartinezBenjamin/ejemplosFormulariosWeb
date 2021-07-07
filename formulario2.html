@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Formulario 2 </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+</head>
+
+<body>
+
+
+    <form action="scrip.php" method="post" name="formulario">
+        <table border="0" width="700" cellpadding="5" align="center">
+
+            <tr>
+                <td align="center" colspan="3" bgcolor="pink"  >
+
+                    ENTRADA NUEVA FACTURA
+
+                </td>
+            </tr>
+            <tr>
+                <td> Factura:
+                    <input type="text" name="txtNFactura" size="35" maxiength="30"
+                        placeholder="Introduzca numero de factura">
+
+                </td>
+                <td align="center" colspan="2" rowspan="2"> Fecha de factura: <input type="date"></td>
+            </tr>
+
+
+            <tr>
+                <td> Pedido:
+                    <input type="text" name="txtNPedido" size="35" maxiength="30"
+                        placeholder="Introduzca numero de pedido">
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td align="center" colspan="3">
+                    Cliente:
+                    <SELECT name="cliente" size="1" >
+                        <OPTION selected="true">Amado Nervo</OPTION>
+                        <OPTION>Octavio Paz</OPTION>
+                        <OPTION>Mario Benedetti</OPTION>
+
+                    </SELECT>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    Importe:
+                    <input type="text" name="txtImporte" size="35" maxiength="30" placeholder="Introduzca el importe">
+
+                </td>
+                <td>
+                    IVA:
+                    <input type="text" name="txtIVA" size="35" maxiength="30" placeholder="Introduzca IVA">
+                </td>
+                <td>
+                    Total:
+                    <input type="text" name="txtTotal" size="35" maxiength="30" placeholder="Introduzca el total">
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+
+                    Beneficios:
+                    <input type="text" name="txtBeneficios" size="35" maxiength="30"
+                        placeholder="Introduzca los beneficios">
+
+                </td>
+                <td>
+                    Costos:
+                    <input type="text" name="txtCostos" size="35" maxiength="30" placeholder="Introduzca los costos">
+
+                </td>
+                <td>
+                    % Beneficios:
+                    <input type="text" name="txtBeneficios" size="35" maxiength="30"
+                        placeholder="Introduzca el porcentaje de los beneficios">
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td> Tipo de trabajo
+                    <SELECT name="tipoTrabajo" size="1">
+                        <OPTION selected="true">Jornada completa</OPTION>
+                        <OPTION>Medio tiempo</OPTION>
+                        <OPTION>Dias</OPTION>
+
+                    </SELECT>
+
+                </td>
+                <td>
+                    Forma de pago
+                    <SELECT name="formaPago" size="1">
+                        <OPTION selected="true">Nomina</OPTION>
+                        <OPTION>Cheque</OPTION>
+                        <OPTION>Efectivo </OPTION>
+
+                    </SELECT>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td border="0">
+                    Observaciones </br>
+
+
+
+
+                </td>
+                <td colspan="2">
+                    <TEXTAREA NAME="comentarios" cols="50" rows="3"></TEXTAREA>
+
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <center> <INPUT type="submit" value="Guardar y salir"> </center>
+                </td>
+                <td>
+                    <center> <INPUT type="reset" value="Borrar formulario"></center>
+                </td>
+                <td>
+                    <center> <INPUT type="submit" value="Guardar y continuar"> </center>
+                </td>
+            </tr>
+
+        </table>
+        <br>
+        
+    </form>
+
+    
+
+</body>
+
+</html>

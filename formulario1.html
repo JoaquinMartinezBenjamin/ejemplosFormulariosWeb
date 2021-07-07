@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Ejemplos de formularios</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+</head>
+
+<body>
+    <form action="scrip.php" method="post" name="formulario">
+        <table border="1" width="700" cellpadding="3" align="center">
+
+            <tr>
+                <td align="center" colspan="2" >
+                    <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzhrmxho2MOzsaJLc6ng1RE41vMQtjE65wbw&usqp=CAU" width ="700" height= "150"/>
+                   
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Nombre:
+                </td>
+                <td>
+                    <input type="text" name="txtNombre" size="35" maxiength="30" placeholder="
+        Introduce tu nombre">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    Apellido:
+                </td>
+                <td>
+                    <input type="text" name="txtApellido" size="35" maxiength="30" placeholder="
+        Introduce tu apellido">
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    Domicilio:
+                </td>
+                <td>
+                    <input type="text" name="txtDomicilio" size="35" maxlength="30"
+                        placeholder="Introduce tu Domicilio">
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Interes :
+                </td>
+                <td>
+                    Ajedrez : <input type="checkbox" name="chkintereses" checked="false" value="
+                ajedrez">
+                    Internet : <input type="checkbox" name="chkintereses" checked="false" value="
+                internet">
+                    Autos : <input type="checkbox" name="chkintereses" checked="false" value="
+                autos">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Sexo:
+                </td>
+                <td>
+                    <!-- checked="false"-->
+                    Hombre: <input type="radio" name="radiointereses" value="
+            Hombre">
+                    Mujer: <input type="radio" name="radiointereses" value="
+            Mujer">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Selecciona tu estado:
+                </td>
+                <td>
+                    <SELECT name="estado" size="1">
+                        <OPTION selected="true">Oaxaca</OPTION>
+                        <OPTION>Puebla</OPTION>
+                        <OPTION>Distrito Federal</OPTION>
+
+                    </SELECT>
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Dejanos tu comentario:
+                </td>
+
+                <td>
+
+                    <TEXTAREA NAME="comentarios" cols="32" rows="3">
+
+
+                </TEXTAREA>
+
+                </td>
+            </tr>
+            <tr>
+                <td> Campo Oculto:
+                    <INPUT type="hidden" name="SessionID" value="Asignado dinamicamente">
+                </td>
+
+                <td>
+                    <fieldset>
+
+                        <legend>Información personal</legend>
+
+                        <p>
+                            Nombre: <input type="text" name="txtNombre" size="15" maxiength="30"
+                                placeholder=" Introduce tu nombre">
+
+                            Apellido : <input type="text" name="txtApellido" size="15" maxiength="30"
+                                placeholder="Introduce tu apellido">
+                        </p>
+
+
+
+                    </fieldset>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <center> <INPUT type="reset" value="Borrar formulario"></center>
+
+                </td>
+                
+                    <td><center> <INPUT type="submit" value="Enviar información"> </center></td>
+                
+            </tr>
+
+        </table>
+    </form>
+    <a href="http://localhost/formulario2.html" target="_blank" onclick="window.open(this.href, this.target, 'width=910,height=470'); return false;">Formulario 2</a>
+</body>
+
+</html>
